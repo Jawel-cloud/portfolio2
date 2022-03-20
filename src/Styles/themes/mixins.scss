@@ -1,0 +1,83 @@
+@function pxToRem($pxsize, $rembase:16) {
+    @return($pxsize / $rembase)+rem;
+}
+
+//  font-size: 19px;  => :pxToRem(19);  lub  :pxToRem($space-large); 
+
+
+@mixin boxShadow ($arg) {
+    box-shadow: $arg;
+    -webkit-box-shadow: $arg;
+}
+
+// i wtedy w pliku: @include boxShadow(argumenty);
+
+@mixin myFlex() {
+    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+
+    @each $prefix in $prefixes {
+        display: $prefix;
+    }
+}
+
+//@include myFlex();
+
+@mixin createFlex($flexDirection: false, $boxD:false, $boxO:false, $flexB:false) {
+    @if $flexDirection {
+        -webkit-box-orient: $boxO;
+        -webkit-box-direction: $boxD;
+        -ms-flex-direction: $flexDirection;
+        flex-direction: $flexDirection
+    }
+
+    @if flexB {
+        ms-flex-preffered-size: $flexB;
+        flex-basis: $flexB;
+    }
+
+}
+
+// @include createFlex(column-reverse, reverse, vertical, ...);   -> w pliku 
+// wprowadzi go tylko jeśli będzie podany w nawiasie
+
+@mixin createCol() {
+    @each $size in $sizes {
+        $index: index($sizes, $size);
+
+        .col-#{$index} {
+            width: $size;
+        }
+    }
+}
+
+@include createCol();
+
+//np. col-2 przy nazwie klasy
+// @extend .nazwaklasy; lub @extend %nazwa-placeholder -> dodaje te same style co  ta klasa
+
+
+//Pętle:
+
+
+$elements: 'red'red 40px orange,
+'orange'orange 30px blue,
+'blue'blue 20px red;
+
+//Tworzy klasy o takich właściwościach:
+@each $name,
+$color,
+$fontSize,
+$bcolor in $elements {
+    .test-#{name} {
+        color: $color;
+        font-size: $fontSize;
+        background-color: $bcolor;
+    }
+}
+
+//Różne wbudowane funkcje w SCSS
+
+.navigation-wrapper {
+    // background-color: $c-DustyGray;
+    background-color: change-color($color: $c-DustyGray, $saturation: 60%, $lightness: 20%, $alpha: 0.5)
+}

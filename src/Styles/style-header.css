@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+#header-wrapper {
+    padding: 0 10vw 0 10vw;
+
+}
+
+.header__primary {
+    /* background-color: rgb(228, 170, 144); */
+    position: relative;
+    display: flex;
+}
+
+.myPicture {
+    height: 65vh;
+    border-radius: 5%;
+    margin: 20px;
+    margin-left: 5vw;
+
+}
+
+.header__aside {
+    width: 40vw;
+    margin: 10px;
+    /* margin-left: 23vw; */
+    margin-top: 45vh;
+    justify-content: right;
+
+}
+
+.header__aside h2 {
+    text-align: right;
+}
+
+.header__aside p {
+    text-align: right;
+}
+
+.header__aside-buttons {
+    text-align: right;
+}
+
+.header__aside button {
+    height: 6vh;
+    width: 21%;
+    margin: 0.5vw;
+    background-image: url('../Assets/Pictures/button_01.png');
+    background-color: transparent;
+    background-size: cover;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.header__name {
+    box-sizing: border-box;
+    width: 45vw;
+    position: absolute;
+    left: 26vw;
+    top: 14%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 2vh;
+    padding-bottom: 0;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.header__name p {
+    width: 50%;
+}
+
+.header__name h1 {
+    margin: 1vh 0 1vh 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.header__name-buttons {
+    display: flex;
+    justify-content: right;
+    height: auto;
+}
+
+.header__name-buttons button {
+    margin-right: 5px;
+}
+
+.header__name-buttons p {
+    line-height: 100%;
+    float: right;
+    width: auto;
+    margin-right: 5px;
+}
+
+.squareButton-dev {
+    background-image: url("../Assets/Icons/dev_icon.png");
+}
+
+.header__secondary {
+    display: flex;
+    /* border: 2px solid gray; */
+}
+
+.header__secondary li {
+    color: rgb(122, 122, 122);
+}
+
+.header__aboutMe {
+    width: 40vw;
+    margin: 2vw;
+}
+
+.header-cours {
+    display: flex;
+    float: right;
+
+}
+
+.header-cours p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+.header-cours button {
+    background-image: url("../Assets/Icons/easy_code_button.png");
+    width: 8vw;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 1vw;
+    background-color: transparent;
+    border: 0;
+}
+
+.header-cours button:hover {
+    opacity: 50%;
+}
+
+#header__skills {
+    width: 40vw;
+    margin: 2vw;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 5px;
+}
+
+
+
+.skills {
+    height: 4.5vh;
+    width: 25vw;
+    background-color: rgb(221, 221, 221);
+    margin: 15px;
+    border-radius: 8px;
+}
+
+[class*='skills-'] {
+    height: 100%;
+    box-sizing: border-box;
+    width: 0;
+    background-image: url("../Assets/Pictures/_elementy_gradient_menu.png");
+    border-radius: 8px;
+    text-align: right;
+    line-height: 4.5vh;
+    padding-right: 10px;
+    box-shadow: 2px 2px 2px rgb(168, 168, 168);
+    color: white;
+    font-family: sans-serif;
+}
+
+.skills-PHP {
+    width: 100%;
+}
+
+.skills-JS {
+    width: 90%;
+}
+
+.skills-HTML {
+    width: 90%;
+}
+
+.skills-NODEJS {
+    width: 60%;
+}
+
+.skills-CSS {
+    width: 90%;
+}
+
+.skills-GO {
+    width: 60%;
+}

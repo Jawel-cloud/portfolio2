@@ -1,0 +1,55 @@
+/*colors  (names from https://chir.ag/projects/name-that-color/#6195ED)
+****************************************************************/
+/*paddings, margins
+****************************************************************/
+/*breaks
+****************************************************************/
+/*fonts
+****************************************************************/
+/*buttons
+****************************************************************/
+/*lists  (w stylach->  width: nth($sizes,2);)
+****************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  font: normal normal normal 1rem 'Lato';
+  overflow-x: hidden;
+}
+
+img,
+input[type='image'],
+table {
+  aspect-ratio: attr(width)/attr(height);
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-container {
+  margin: 0 auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+/*# sourceMappingURL=global.css.map */

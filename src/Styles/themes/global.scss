@@ -1,0 +1,65 @@
+@import './variables.scss';
+@import './fonts.scss';
+// @import './normalize.css';
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    font: normal normal normal 1rem 'Lato';
+    overflow-x: hidden;
+    // background-color: $c-white;
+    // color: $c-white;
+}
+
+img,
+input[type='image'],
+table {
+    aspect-ratio: attr(width)/attr(height);
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    color: $c-black;
+    text-decoration: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.page-container {
+    margin: 0 auto;
+    // max-width: $wrapper;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+// @media screen and (max-width: $break-high) {
+//     .page-container {
+//         max-width: $wrapper-high;
+//     }
+// }
+
+// @media screen and (max-width: $break-laptop) {
+//     .page-container {
+//         max-width: $wrapper-laptop;
+//     }
+// }
+
+// @media screen and (max-width: $break-mid) {
+//     .page-container {
+//         max-width: $wrapper-mid;
+//     }
+// }

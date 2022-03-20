@@ -1,0 +1,100 @@
+.footer-wrapper {
+    background-image: url("../Assets/Pictures/tło_gradient.png");
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 10vw 0 10vw;
+    height: auto;
+
+}
+
+.footer__contact {
+    display: block;
+    width: 40vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.footer__contact p {
+    width: 34vw;
+}
+
+.footer__contact button {
+    position: absolute;
+    left: 32vw;
+    top: 51vh;
+    width: 10vw;
+    height: 7vh;
+    background-image: url("../Assets/Pictures/button_01.png");
+    background-size: cover;
+    border: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+input {
+    width: 30vw;
+    height: 5vh;
+    margin: 1vh;
+    box-shadow: 2px 2px 2px gray;
+    border: 0;
+    border-radius: 5px;
+}
+
+.bigInput {
+    height: 20vh;
+}
+
+.bigInput::placeholder {
+    word-wrap: break-word;
+    text-align: start;
+    vertical-align: top;
+    line-height: 300%;
+    overflow-wrap: inherit;
+    overflow: unset;
+    width: 5vw;
+
+}
+
+.footer__phone {
+    position: absolute;
+    top: 30%;
+    right: 21%;
+    display: inline-flex;
+    background-color: white;
+    width: 18vw;
+    height: 10vh;
+    opacity: 70%;
+    box-shadow: 2px 2px 2px gray;
+    z-index: 3;
+}
+
+.footer__phone img {
+    width: 9vh;
+    height: 9vh;
+}
+
+
+.footer__picture {
+    margin-top: 4vh;
+    height: 70vh;
+
+
+}
+
+.footer__picture img {
+    height: 50%;
+    border-radius: 5%;
+    float: right;
+    margin-right: 1vw;
+
+
+}
+
+.footer__picture pre {
+    float: right;
+    width: auto;
+}

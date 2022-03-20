@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.navigation-wrapper {
+    background-color: rgb(203, 228, 248);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw 0 10vw;
+}
+
+.initial {
+    margin: auto;
+    margin-left: 3vw;
+    font-family: 'Monoton', cursive;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../Assets/Pictures/_elementy_gradient_menu.png");
+    background-size: cover;
+    height: 60%;
+    width: 51vw;
+    margin: auto;
+    margin-right: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(153, 153, 153);
+}
+
+.navigation__buttons {
+
+    height: 60%;
+    margin: auto 2vh;
+    border-right-color: white;
+    border-right: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;
+}
+
+.navigation__button {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    margin: auto;
+    flex-grow: initial;
+}
+
+.navigation__buttons a {
+    height: 60%;
+    margin: auto 2vh;
+}
+
+.line {
+    margin: auto;
+    background-color: white;
+    width: 2px;
+    height: 5vh;
+}
+
+.navigation__buttons-icons {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+}
+
+[class*='navigation__button-icon-'] {
+    height: 6vh;
+    width: 6vh;
+    background-size: contain;
+    margin: auto 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+[class*='navigation__button-icon-']:hover {
+    background-size: contain;
+    margin: 2px;
+    background-color: gray;
+    border-color: gray;
+    border-radius: 4px;
+}
+
+.navigation__button-icon-twitter {
+    background-image: url(../Assets/Icons/twitter_icon.png);
+}
+
+.navigation__button-icon-facebook {
+    background-image: url(../Assets/Icons/facebook_icon.png);
+}
+
+.navigation__button-icon-linkedin {
+    background-image: url(../Assets/Icons/linkedin_icon.png);
+}

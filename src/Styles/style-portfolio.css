@@ -1,0 +1,106 @@
+.Portfolio-wrapper {
+    padding: 0 10vw 0 10vw;
+}
+
+.myWorks-wrapper p {
+    margin: 5vh 0;
+    width: 50%;
+}
+
+.myWorks-wrapper h2 {
+    margin-bottom: 0;
+}
+
+.myWorks-wrapper .description {
+    margin: 0;
+}
+
+.mySites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.mySite {
+    width: 23vw;
+    height: 33vh;
+    margin: 0 2.5vh 2.5vh 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(92, 92, 92);
+    background-color: white;
+}
+
+.mySite:hover {
+    /* opacity: 50%; */
+    background-color: rgb(82, 114, 219);
+}
+
+.mySite button:first-of-type {
+    margin-right: 1vw;
+}
+
+.mysite-site1 {
+    background-image: url(../Assets/Pictures/site1.jpg);
+}
+
+.mysite-site2 {
+    background-image: url(../Assets/Pictures/site2.jpg);
+}
+
+.mysite-site3 {
+    background-image: url(../Assets/Pictures/site3.jpg);
+}
+
+.mysite-site4 {
+    background-image: url(../Assets/Pictures/site4.jpg);
+}
+
+.mysite-site5 {
+    background-image: url(../Assets/Pictures/site5.jpg);
+}
+
+.mysite-site6 {
+    background-image: url(../Assets/Pictures/site6.jpg);
+}
+
+
+.mySite button:hover {
+    background-color: gray;
+}
+
+
+.squareButton-git {
+    background-image: url("../Assets/Icons/github_icon.png");
+}
+
+.squareButton-arrow {
+    background-image: url("../Assets/Icons/external_link_icon.png");
+}
+
+[class*='mysite-'] {
+    width: 90%;
+    height: 75%;
+    margin: 1vh auto;
+    background-color: rgb(82, 114, 219);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.site6-click {
+    text-align: center;
+    background-color: rgb(82, 114, 219);
+    height: 100%;
+    opacity: 80%;
+    padding: 2vh 1vw;
+    box-sizing: border-box;
+}
+
+.site6-click p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200%;
+    margin: 0 1vw;
+    font-size: 0.8rem;
+}
